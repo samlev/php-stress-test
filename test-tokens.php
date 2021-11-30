@@ -2,13 +2,15 @@
 /**
  * test-tokens.php
  *
+ * Tests for the maximum number of tokens in a file by brute force.
+ *
  * @package
  * @author: Samuel Levy <sam@determineddevelopment.com>
  */
 
 $fname = __DIR__ . '/out/tokens.php';
-$php = 'php7.3 -d memory_limit=128M';
-$step = 10000;
+$php = 'php8.1 -d memory_limit=128M';
+$step = 100;
 
 for ($rounds = 1 ;; $rounds ++) {
     $fp = fopen($fname, 'w');

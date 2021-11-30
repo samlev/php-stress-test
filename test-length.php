@@ -2,7 +2,7 @@
 /**
  * test-length.php
  *
- * Tests for the maximum length of a PHP file by brute force.
+ * Tests for the maximum length of a string by brute force.
  *
  * @package
  * @author: Samuel Levy <sam@determineddevelopment.com>
